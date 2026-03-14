@@ -1,14 +1,30 @@
-# Pokémon FireRed and LeafGreen
+# LibraRed
 
-This is a decompilation of English Pokémon FireRed and LeafGreen.
+LibraRed is a **Pokémon FireRed/LeafGreen (Gen 3) decomp rom hack** based on [`pret/pokefirered`](https://github.com/pret/pokefirered) that focuses on **stat rebalancing** to make more Pokémon viable while keeping core Gen 3 gameplay intact.
 
-It builds the following ROM images:
+## Main Changes
 
-* [**pokefirered.gba**](https://datomatic.no-intro.org/?page=show_record&s=23&n=1616) `sha1: 41cb23d8dccc8ebd7c649cd8fbb58eeace6e2fdc`
-* [**pokeleafgreen.gba**](https://datomatic.no-intro.org/?page=show_record&s=23&n=1617) `sha1: 574fa542ffebb14be69902d1d36f1ec0a4afd71e`
-* [**pokefirered_rev1.gba**](https://datomatic.no-intro.org/?page=show_record&s=23&n=1672) `sha1: dd5945db9b930750cb39d00c84da8571feebf417`
-* [**pokeleafgreen_rev1.gba**](https://datomatic.no-intro.org/index.php?page=show_record&s=23&n=1668) `sha1: 7862c67bdecbe21d1d69ce082ce34327e1c6ed5e`
+### Evolution-stage Base Stat Rebalance
+Instead of species having wildly different total base stats, LibraRed uses **BST bands by evolution stage**:
 
-To set up the repository, see [INSTALL.md](INSTALL.md).
+- **Stage 1 (basic):** 360 BST  
+- **Stage 2 (middle of 3-stage lines):** 450 BST  
+- **Final evolutions + single-stage Pokémon:** 540 BST  
 
-For contacts and other pret projects, see [pret.github.io](https://pret.github.io/).
+Pokémon keep their identity through **stat distribution**, **typing**, **abilities**, and **movepools**—but are no longer held back primarily by low BST.
+
+### Special Tiers
+- **Pseudo-legendaries (final forms):** 570 BST  
+- **Legendaries:** 600 BST  
+- **Mythicals:** 600 BST  
+- **Mewtwo:** 680 BST  
+
+### How Stats Are Adjusted
+Base stats are **scaled proportionally** to hit the target BST exactly (with integer rounding), preserving each Pokémon’s overall stat “shape” (fast stays fast, bulky stays bulky, etc.).
+
+## Project Status
+Early development. Expect balance iteration and data updates.
+
+## Build / Credits
+- Built from the **FR/LG decompilation** project: [`pret/pokefirered`](https://github.com/pret/pokefirered)
+- Follow pret’s build instructions for compiling. This repository does not distribute ROM files.
