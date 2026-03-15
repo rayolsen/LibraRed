@@ -1,0 +1,103 @@
+data/maps/CeladonCity/map.json[36m:[m233[36m:[m      "script": "CeladonCity_EventScript_SilphCo[1;31mScientist[m",
+data/maps/CeladonCity/scripts.inc[36m:[m66[36m:[mCeladonCity_EventScript_SilphCo[1;31mScientist[m::
+data/maps/CeladonCity_GameCorner/map.json[36m:[m141[36m:[m      "script": "CeladonCity_GameCorner_EventScript_[1;31mScientist[m",
+data/maps/CeladonCity_GameCorner/scripts.inc[36m:[m179[36m:[mCeladonCity_GameCorner_EventScript_[1;31mScientist[m::
+data/maps/CeladonCity_GameCorner/scripts.inc[36m:[m182[36m:[m	goto_if_set FLAG_GOT_20_COINS_FROM_GAMBLER, CeladonCity_GameCorner_EventScript_[1;31mScientist[mAlreadyGotCoins
+data/maps/CeladonCity_GameCorner/scripts.inc[36m:[m186[36m:[m	goto_if_ge VAR_TEMP_1, (MAX_COINS + 1) - 20, CeladonCity_GameCorner_EventScript_[1;31mScientist[mNoRoomForCoins
+data/maps/CeladonCity_GameCorner/scripts.inc[36m:[m196[36m:[mCeladonCity_GameCorner_EventScript_[1;31mScientist[mNoRoomForCoins::
+data/maps/CeladonCity_GameCorner/scripts.inc[36m:[m201[36m:[mCeladonCity_GameCorner_EventScript_[1;31mScientist[mAlreadyGotCoins::
+data/maps/CinnabarIsland/scripts.inc[36m:[m336[36m:[m	msgbox CinnabarIsland_Text_[1;31mScientist[msExperimentInMansion, MSGBOX_NPC
+data/maps/CinnabarIsland/text.inc[36m:[m10[36m:[mCinnabarIsland_Text_[1;31mScientist[msExperimentInMansion::
+data/maps/CinnabarIsland/text.inc[36m:[m11[36m:[m    .string "[1;31mScientist[ms conduct experiments \n"
+data/maps/CinnabarIsland_Mart/map.json[36m:[m57[36m:[m      "script": "CinnabarIsland_Mart_EventScript_[1;31mScientist[m",
+data/maps/CinnabarIsland_Mart/scripts.inc[36m:[m8[36m:[mCinnabarIsland_Mart_EventScript_[1;31mScientist[m::
+data/maps/CinnabarIsland_PokemonLab_Entrance/map.json[36m:[m29[36m:[m      "script": "CinnabarIsland_PokemonLab_Entrance_EventScript_[1;31mScientist[m",
+data/maps/CinnabarIsland_PokemonLab_Entrance/scripts.inc[36m:[m13[36m:[mCinnabarIsland_PokemonLab_Entrance_EventScript_[1;31mScientist[m::
+data/maps/CinnabarIsland_PokemonLab_ExperimentRoom/map.json[36m:[m43[36m:[m      "script": "CinnabarIsland_PokemonLab_ExperimentRoom_EventScript_Fossil[1;31mScientist[m",
+data/maps/CinnabarIsland_PokemonLab_ExperimentRoom/scripts.inc[36m:[m42[36m:[mCinnabarIsland_PokemonLab_ExperimentRoom_EventScript_Fossil[1;31mScientist[m::
+data/maps/CinnabarIsland_PokemonLab_Lounge/map.json[36m:[m29[36m:[m      "script": "CinnabarIsland_PokemonLab_Lounge_EventScript_[1;31mScientist[m",
+data/maps/CinnabarIsland_PokemonLab_Lounge/scripts.inc[36m:[m4[36m:[mCinnabarIsland_PokemonLab_Lounge_EventScript_[1;31mScientist[m::
+data/maps/CinnabarIsland_PokemonLab_ResearchRoom/map.json[36m:[m43[36m:[m      "script": "CinnabarIsland_PokemonLab_ResearchRoom_EventScript_[1;31mScientist[m",
+data/maps/CinnabarIsland_PokemonLab_ResearchRoom/scripts.inc[36m:[m8[36m:[mCinnabarIsland_PokemonLab_ResearchRoom_EventScript_[1;31mScientist[m::
+data/maps/PewterCity_Museum_1F/map.json[36m:[m30[36m:[m      "script": "PewterCity_Museum_1F_EventScript_[1;31mScientist[m1",
+data/maps/PewterCity_Museum_1F/map.json[36m:[m58[36m:[m      "script": "PewterCity_Museum_1F_EventScript_OldAmber[1;31mScientist[m",
+data/maps/PewterCity_Museum_1F/map.json[36m:[m87[36m:[m      "script": "PewterCity_Museum_1F_EventScript_[1;31mScientist[m2",
+data/maps/PewterCity_Museum_1F/scripts.inc[36m:[m4[36m:[mPewterCity_Museum_1F_EventScript_[1;31mScientist[m1::
+data/maps/PewterCity_Museum_1F/scripts.inc[36m:[m7[36m:[m	goto_if_eq VAR_FACING, DIR_WEST, PewterCity_Museum_1F_EventScript_[1;31mScientist[m1BehindCounter
+data/maps/PewterCity_Museum_1F/scripts.inc[36m:[m8[36m:[m	goto_if_eq VAR_FACING, DIR_SOUTH, PewterCity_Museum_1F_EventScript_[1;31mScientist[m1BehindCounter
+data/maps/PewterCity_Museum_1F/scripts.inc[36m:[m9[36m:[m	goto_if_eq VAR_FACING, DIR_NORTH, PewterCity_Museum_1F_EventScript_[1;31mScientist[m1BehindCounter
+data/maps/PewterCity_Museum_1F/scripts.inc[36m:[m14[36m:[mPewterCity_Museum_1F_EventScript_[1;31mScientist[m1BehindCounter::
+data/maps/PewterCity_Museum_1F/scripts.inc[36m:[m134[36m:[mPewterCity_Museum_1F_EventScript_[1;31mScientist[m2::
+data/maps/PewterCity_Museum_1F/scripts.inc[36m:[m142[36m:[mPewterCity_Museum_1F_EventScript_OldAmber[1;31mScientist[m::
+data/maps/PewterCity_Museum_2F/map.json[36m:[m29[36m:[m      "script": "PewterCity_Museum_2F_EventScript_[1;31mScientist[m",
+data/maps/PewterCity_Museum_2F/scripts.inc[36m:[m12[36m:[mPewterCity_Museum_2F_EventScript_[1;31mScientist[m::
+data/maps/Route2_House/map.json[36m:[m29[36m:[m      "script": "Route2_House_EventScript_[1;31mScientist[m",
+data/maps/Route2_House/scripts.inc[36m:[m4[36m:[mRoute2_House_EventScript_[1;31mScientist[m::
+data/maps/SafariZone_Center_RestHouse/map.json[36m:[m29[36m:[m      "script": "SafariZone_Center_RestHouse_EventScript_[1;31mScientist[m",
+data/maps/SafariZone_Center_RestHouse/scripts.inc[36m:[m8[36m:[mSafariZone_Center_RestHouse_EventScript_[1;31mScientist[m::
+data/maps/SafariZone_East_RestHouse/map.json[36m:[m29[36m:[m      "script": "SafariZone_East_RestHouse_EventScript_[1;31mScientist[m",
+data/maps/SafariZone_East_RestHouse/scripts.inc[36m:[m8[36m:[mSafariZone_East_RestHouse_EventScript_[1;31mScientist[m::
+data/maps/SafariZone_North_RestHouse/map.json[36m:[m43[36m:[m      "script": "SafariZone_North_RestHouse_EventScript_[1;31mScientist[m",
+data/maps/SafariZone_North_RestHouse/scripts.inc[36m:[m8[36m:[mSafariZone_North_RestHouse_EventScript_[1;31mScientist[m::
+data/maps/SafariZone_West_RestHouse/map.json[36m:[m29[36m:[m      "script": "SafariZone_West_RestHouse_EventScript_[1;31mScientist[m",
+data/maps/SafariZone_West_RestHouse/scripts.inc[36m:[m8[36m:[mSafariZone_West_RestHouse_EventScript_[1;31mScientist[m::
+data/maps/SevenIsland/map.json[36m:[m69[36m:[m      "script": "SevenIsland_EventScript_[1;31mScientist[m",
+data/maps/SevenIsland/scripts.inc[36m:[m17[36m:[mSevenIsland_EventScript_[1;31mScientist[m::
+data/maps/SilphCo_5F/map.json[36m:[m141[36m:[m      "script": "SilphCo_5F_EventScript_[1;31mScientist[m",
+data/maps/SilphCo_8F/map.json[36m:[m99[36m:[m      "script": "SilphCo_8F_EventScript_[1;31mScientist[m",
+data/maps/SixIsland_RuinValley/map.json[36m:[m36[36m:[m      "script": "SixIsland_RuinValley_EventScript_[1;31mScientist[m",
+data/maps/SixIsland_RuinValley/scripts.inc[36m:[m13[36m:[mSixIsland_RuinValley_EventScript_[1;31mScientist[m::
+data/scripts/fame_checker.inc[36m:[m272[36m:[mSilphCo_5F_EventScript_[1;31mScientist[m::
+data/scripts/fame_checker.inc[36m:[m280[36m:[mSilphCo_8F_EventScript_[1;31mScientist[m::
+include/graphics.h[36m:[m2553[36m:[mextern const u32 gTrainerFrontPic_[1;31mScientist[m[];
+include/graphics.h[36m:[m2706[36m:[mextern const u32 gTrainerPalette_[1;31mScientist[m[];
+src/data/graphics/trainers.h[36m:[m322[36m:[mconst u32 gTrainerFrontPic_[1;31mScientist[m[] = INCBIN_U32("graphics/trainers/front_pics/scientist_front_pic.4bpp.lz");
+src/data/graphics/trainers.h[36m:[m323[36m:[mconst u32 gTrainerPalette_[1;31mScientist[m[] = INCBIN_U32("graphics/trainers/palettes/scientist.gbapal.lz");
+src/data/object_events/object_event_graphics.h[36m:[m91[36m:[mconst u16 gObjectEventPic_[1;31mScientist[m[] = INCBIN_U16("graphics/object_events/pics/people/scientist.4bpp");
+src/data/object_events/object_event_graphics_info.h[36m:[m742[36m:[mconst struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_[1;31mScientist[m = {
+src/data/object_events/object_event_graphics_info.h[36m:[m757[36m:[m    .images = sPicTable_[1;31mScientist[m,
+src/data/object_events/object_event_graphics_info_pointers.h[36m:[m56[36m:[mconst struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_[1;31mScientist[m;
+src/data/object_events/object_event_graphics_info_pointers.h[36m:[m211[36m:[m    [OBJ_EVENT_GFX_SCIENTIST]                = &gObjectEventGraphicsInfo_[1;31mScientist[m,
+src/data/object_events/object_event_pic_tables.h[36m:[m600[36m:[mstatic const struct SpriteFrameImage sPicTable_[1;31mScientist[m[] = {
+src/data/object_events/object_event_pic_tables.h[36m:[m601[36m:[m    overworld_frame(gObjectEventPic_[1;31mScientist[m, 2, 4, 0),
+src/data/object_events/object_event_pic_tables.h[36m:[m602[36m:[m    overworld_frame(gObjectEventPic_[1;31mScientist[m, 2, 4, 1),
+src/data/object_events/object_event_pic_tables.h[36m:[m603[36m:[m    overworld_frame(gObjectEventPic_[1;31mScientist[m, 2, 4, 2),
+src/data/object_events/object_event_pic_tables.h[36m:[m604[36m:[m    overworld_frame(gObjectEventPic_[1;31mScientist[m, 2, 4, 3),
+src/data/object_events/object_event_pic_tables.h[36m:[m605[36m:[m    overworld_frame(gObjectEventPic_[1;31mScientist[m, 2, 4, 4),
+src/data/object_events/object_event_pic_tables.h[36m:[m606[36m:[m    overworld_frame(gObjectEventPic_[1;31mScientist[m, 2, 4, 5),
+src/data/object_events/object_event_pic_tables.h[36m:[m607[36m:[m    overworld_frame(gObjectEventPic_[1;31mScientist[m, 2, 4, 6),
+src/data/object_events/object_event_pic_tables.h[36m:[m608[36m:[m    overworld_frame(gObjectEventPic_[1;31mScientist[m, 2, 4, 7),
+src/data/object_events/object_event_pic_tables.h[36m:[m609[36m:[m    overworld_frame(gObjectEventPic_[1;31mScientist[m, 2, 4, 8),
+src/data/object_events/object_event_pic_tables.h[36m:[m610[36m:[m    overworld_frame(gObjectEventPic_[1;31mScientist[m, 2, 4, 9),
+src/data/trainer_graphics/front_pic_anims.h[36m:[m536[36m:[mstatic const union AnimCmd *const sAnims_[1;31mScientist[m[] =
+src/data/trainer_graphics/front_pic_anims.h[36m:[m850[36m:[m    [TRAINER_PIC_SCIENTIST]             = sAnims_[1;31mScientist[m,
+src/data/trainer_graphics/front_pic_tables.h[36m:[m262[36m:[m    TRAINER_SPRITE(SCIENTIST, gTrainerFrontPic_[1;31mScientist[m, 0x800),
+src/data/trainer_graphics/front_pic_tables.h[36m:[m414[36m:[m    TRAINER_PAL(SCIENTIST, gTrainerPalette_[1;31mScientist[m),
+src/data/trainer_parties.h[36m:[m3870[36m:[mstatic const struct TrainerMonNoItemDefaultMoves sParty_[1;31mScientist[mTed[] = {
+src/data/trainer_parties.h[36m:[m3883[36m:[mstatic const struct TrainerMonNoItemCustomMoves sParty_[1;31mScientist[mConnor[] = {
+src/data/trainer_parties.h[36m:[m3910[36m:[mstatic const struct TrainerMonNoItemDefaultMoves sParty_[1;31mScientist[mJerry[] = {
+src/data/trainer_parties.h[36m:[m3928[36m:[mstatic const struct TrainerMonNoItemCustomMoves sParty_[1;31mScientist[mJose[] = {
+src/data/trainer_parties.h[36m:[m3943[36m:[mstatic const struct TrainerMonNoItemDefaultMoves sParty_[1;31mScientist[mRodney[] = {
+src/data/trainer_parties.h[36m:[m3951[36m:[mstatic const struct TrainerMonNoItemCustomMoves sParty_[1;31mScientist[mBeau[] = {
+src/data/trainer_parties.h[36m:[m3978[36m:[mstatic const struct TrainerMonNoItemCustomMoves sParty_[1;31mScientist[mTaylor[] = {
+src/data/trainer_parties.h[36m:[m4011[36m:[mstatic const struct TrainerMonNoItemDefaultMoves sParty_[1;31mScientist[mJoshua[] = {
+src/data/trainer_parties.h[36m:[m4024[36m:[mstatic const struct TrainerMonNoItemDefaultMoves sParty_[1;31mScientist[mParker[] = {
+src/data/trainer_parties.h[36m:[m4037[36m:[mstatic const struct TrainerMonNoItemCustomMoves sParty_[1;31mScientist[mEd[] = {
+src/data/trainer_parties.h[36m:[m4058[36m:[mstatic const struct TrainerMonNoItemDefaultMoves sParty_[1;31mScientist[mTravis[] = {
+src/data/trainer_parties.h[36m:[m4071[36m:[mstatic const struct TrainerMonNoItemDefaultMoves sParty_[1;31mScientist[mBraydon[] = {
+src/data/trainer_parties.h[36m:[m4089[36m:[mstatic const struct TrainerMonNoItemDefaultMoves sParty_[1;31mScientist[mIvan[] = {
+src/data/trainer_parties.h[36m:[m7588[36m:[mstatic const struct TrainerMonNoItemCustomMoves sParty_[1;31mScientist[mGideon[] = {
+src/data/trainers.h[36m:[m3353[36m:[m        .party = NO_ITEM_DEFAULT_MOVES(sParty_[1;31mScientist[mTed),
+src/data/trainers.h[36m:[m3363[36m:[m        .party = NO_ITEM_CUSTOM_MOVES(sParty_[1;31mScientist[mConnor),
+src/data/trainers.h[36m:[m3373[36m:[m        .party = NO_ITEM_DEFAULT_MOVES(sParty_[1;31mScientist[mJerry),
+src/data/trainers.h[36m:[m3383[36m:[m        .party = NO_ITEM_CUSTOM_MOVES(sParty_[1;31mScientist[mJose),
+src/data/trainers.h[36m:[m3393[36m:[m        .party = NO_ITEM_DEFAULT_MOVES(sParty_[1;31mScientist[mRodney),
+src/data/trainers.h[36m:[m3403[36m:[m        .party = NO_ITEM_CUSTOM_MOVES(sParty_[1;31mScientist[mBeau),
+src/data/trainers.h[36m:[m3413[36m:[m        .party = NO_ITEM_CUSTOM_MOVES(sParty_[1;31mScientist[mTaylor),
+src/data/trainers.h[36m:[m3423[36m:[m        .party = NO_ITEM_DEFAULT_MOVES(sParty_[1;31mScientist[mJoshua),
+src/data/trainers.h[36m:[m3433[36m:[m        .party = NO_ITEM_DEFAULT_MOVES(sParty_[1;31mScientist[mParker),
+src/data/trainers.h[36m:[m3443[36m:[m        .party = NO_ITEM_CUSTOM_MOVES(sParty_[1;31mScientist[mEd),
+src/data/trainers.h[36m:[m3453[36m:[m        .party = NO_ITEM_DEFAULT_MOVES(sParty_[1;31mScientist[mTravis),
+src/data/trainers.h[36m:[m3463[36m:[m        .party = NO_ITEM_DEFAULT_MOVES(sParty_[1;31mScientist[mBraydon),
+src/data/trainers.h[36m:[m3473[36m:[m        .party = NO_ITEM_DEFAULT_MOVES(sParty_[1;31mScientist[mIvan),
+src/data/trainers.h[36m:[m5453[36m:[m        .party = NO_ITEM_CUSTOM_MOVES(sParty_[1;31mScientist[mGideon),
